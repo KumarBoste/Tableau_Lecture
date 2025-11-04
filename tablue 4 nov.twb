@@ -1,0 +1,2616 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <Extensions />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <_.fcp.VizExtensions.true...VizExtensions />
+    <_.fcp.VizExtensionsDupEncodingUUID.true...VizExtensionsDupEncodingUUID />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='SupplyChainManagement_Dataset' inline='true' name='federated.16c986y0c1l0co10yzopx0anjulq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='SupplyChainManagement_Dataset' name='textscan.1ln051v1oogivp0zjkvnl0sgkzj3'>
+            <connection class='textscan' directory='E:/google clsass' filename='SupplyChainManagement_Dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ln051v1oogivp0zjkvnl0sgkzj3' name='SupplyChainManagement_Dataset.csv' table='[SupplyChainManagement_Dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Order_ID' ordinal='0' />
+            <column datatype='date' name='Order_Date' ordinal='1' />
+            <column datatype='date' name='Ship_Date' ordinal='2' />
+            <column datatype='date' name='Delivery_Date' ordinal='3' />
+            <column datatype='string' name='Order_Status' ordinal='4' />
+            <column datatype='string' name='Product_ID' ordinal='5' />
+            <column datatype='string' name='Product_Name' ordinal='6' />
+            <column datatype='string' name='Category' ordinal='7' />
+            <column datatype='string' name='Sub_Category' ordinal='8' />
+            <column datatype='string' name='SKU_Code' ordinal='9' />
+            <column datatype='real' name='Unit_Price' ordinal='10' />
+            <column datatype='string' name='Customer_ID' ordinal='11' />
+            <column datatype='string' name='Customer_Name' ordinal='12' />
+            <column datatype='string' name='Customer_Segment' ordinal='13' />
+            <column datatype='string' name='Region' ordinal='14' />
+            <column datatype='string' name='Country' ordinal='15' />
+            <column datatype='string' name='Warehouse_ID' ordinal='16' />
+            <column datatype='string' name='Warehouse_Location' ordinal='17' />
+            <column datatype='integer' name='Stock_Available' ordinal='18' />
+            <column datatype='integer' name='Stock_Reorder_Level' ordinal='19' />
+            <column datatype='string' name='Shipping_Mode' ordinal='20' />
+            <column datatype='string' name='Carrier' ordinal='21' />
+            <column datatype='real' name='Freight_Cost' ordinal='22' />
+            <column datatype='integer' name='Shipping_Distance_KM' ordinal='23' />
+            <column datatype='integer' name='Quantity' ordinal='24' />
+            <column datatype='real' name='Total_Sales' ordinal='25' />
+            <column datatype='real' name='Discount' ordinal='26' />
+            <column datatype='real' name='Profit' ordinal='27' />
+            <column datatype='string' name='Return_Status' ordinal='28' />
+            <column datatype='string' name='Customer_Review' ordinal='29' />
+            <column datatype='integer' name='Review_Rating' ordinal='30' />
+            <column datatype='string' name='Sentiment_Score' ordinal='31' />
+            <column datatype='string' name='Return_Reason' ordinal='32' />
+            <column datatype='string' name='Supplier_ID' ordinal='33' />
+            <column datatype='string' name='Supplier_Name' ordinal='34' />
+            <column datatype='integer' name='Supplier_Lead_Time' ordinal='35' />
+            <column datatype='real' name='Supplier_Rating' ordinal='36' />
+            <column datatype='string' name='Supplier_Delivery_Performance' ordinal='37' />
+            <column datatype='real' name='Historical_Sales_Trend' ordinal='38' />
+            <column datatype='string' name='Seasonality_Factor' ordinal='39' />
+            <column datatype='integer' name='Predicted_Demand' ordinal='40' />
+            <column datatype='integer' name='Stockout_Events' ordinal='41' />
+            <column datatype='real' name='Gross_Margin' ordinal='42' />
+            <column datatype='real' name='Customer_Lifetime_Value' ordinal='43' />
+            <column datatype='real' name='Return_on_Investment' ordinal='44' />
+            <column datatype='real' name='Marketing_Spend' ordinal='45' />
+            <column datatype='real' name='Profit_Per_Order' ordinal='46' />
+            <column datatype='integer' name='Order_Fulfillment_Time' ordinal='47' />
+            <column datatype='string' name='Logistics_Delay' ordinal='48' />
+            <column datatype='integer' name='Customer_Complaints' ordinal='49' />
+            <column datatype='real' name='Warehouse_Utilization_Rate' ordinal='50' />
+            <column datatype='real' name='Order_Accuracy_Rate' ordinal='51' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Order_ID]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Order_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Order_Date]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Order_Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Ship_Date]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Ship_Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delivery_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Delivery_Date]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Delivery_Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order_Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Order_Status]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Order_Status</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product_ID]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Product_ID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product_Name]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Product_Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub_Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sub_Category]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Sub_Category</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SKU_Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SKU_Code]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>SKU_Code</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unit_Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Unit_Price]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Unit_Price</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer_ID]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Customer_ID</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer_Name]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Customer_Name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_Segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer_Segment]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Customer_Segment</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Warehouse_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Warehouse_ID]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Warehouse_ID</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Warehouse_Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Warehouse_Location]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Warehouse_Location</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stock_Available</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Stock_Available]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Stock_Available</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stock_Reorder_Level</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Stock_Reorder_Level]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Stock_Reorder_Level</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shipping_Mode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Shipping_Mode]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Shipping_Mode</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Carrier</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Carrier]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Carrier</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Freight_Cost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Freight_Cost]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Freight_Cost</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shipping_Distance_KM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Shipping_Distance_KM]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Shipping_Distance_KM</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total_Sales]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Total_Sales</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Discount]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Discount</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Return_Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Return_Status]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Return_Status</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_Review</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer_Review]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Customer_Review</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review_Rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Review_Rating]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Review_Rating</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sentiment_Score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sentiment_Score]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Sentiment_Score</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Return_Reason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Return_Reason]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Return_Reason</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Supplier_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Supplier_ID]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Supplier_ID</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Supplier_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Supplier_Name]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Supplier_Name</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Supplier_Lead_Time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Supplier_Lead_Time]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Supplier_Lead_Time</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Supplier_Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Supplier_Rating]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Supplier_Rating</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Supplier_Delivery_Performance</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Supplier_Delivery_Performance]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Supplier_Delivery_Performance</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Historical_Sales_Trend</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Historical_Sales_Trend]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Historical_Sales_Trend</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Seasonality_Factor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Seasonality_Factor]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Seasonality_Factor</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Predicted_Demand</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Predicted_Demand]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Predicted_Demand</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stockout_Events</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Stockout_Events]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Stockout_Events</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross_Margin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gross_Margin]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Gross_Margin</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_Lifetime_Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Customer_Lifetime_Value]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Customer_Lifetime_Value</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Return_on_Investment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Return_on_Investment]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Return_on_Investment</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marketing_Spend</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Marketing_Spend]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Marketing_Spend</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit_Per_Order</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit_Per_Order]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Profit_Per_Order</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order_Fulfillment_Time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Order_Fulfillment_Time]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Order_Fulfillment_Time</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Logistics_Delay</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Logistics_Delay]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Logistics_Delay</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_Complaints</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Customer_Complaints]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Customer_Complaints</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Warehouse_Utilization_Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Warehouse_Utilization_Rate]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Warehouse_Utilization_Rate</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order_Accuracy_Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Order_Accuracy_Rate]</local-name>
+            <parent-name>[SupplyChainManagement_Dataset.csv]</parent-name>
+            <remote-alias>Order_Accuracy_Rate</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Customer Complaints' datatype='integer' name='[Customer_Complaints]' role='measure' type='quantitative' />
+      <column caption='Customer ID' datatype='string' name='[Customer_ID]' role='dimension' type='nominal' />
+      <column caption='Customer Lifetime Value' datatype='real' name='[Customer_Lifetime_Value]' role='measure' type='quantitative' />
+      <column caption='Customer Name' datatype='string' name='[Customer_Name]' role='dimension' type='nominal' />
+      <column caption='Customer Review' datatype='string' name='[Customer_Review]' role='dimension' type='nominal' />
+      <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+      <column caption='Delivery Date' datatype='date' name='[Delivery_Date]' role='dimension' type='ordinal' />
+      <column caption='Freight Cost' datatype='real' name='[Freight_Cost]' role='measure' type='quantitative' />
+      <column caption='Gross Margin' datatype='real' name='[Gross_Margin]' role='measure' type='quantitative' />
+      <column caption='Historical Sales Trend' datatype='real' name='[Historical_Sales_Trend]' role='measure' type='quantitative' />
+      <column caption='Logistics Delay' datatype='string' name='[Logistics_Delay]' role='dimension' type='nominal' />
+      <column caption='Marketing Spend' datatype='real' name='[Marketing_Spend]' role='measure' type='quantitative' />
+      <column caption='Order Accuracy Rate' datatype='real' name='[Order_Accuracy_Rate]' role='measure' type='quantitative' />
+      <column caption='Order Date' datatype='date' name='[Order_Date]' role='dimension' type='ordinal' />
+      <column caption='Order Fulfillment Time' datatype='integer' name='[Order_Fulfillment_Time]' role='measure' type='quantitative' />
+      <column caption='Order ID' datatype='string' name='[Order_ID]' role='dimension' type='nominal' />
+      <column caption='Order Status' datatype='string' name='[Order_Status]' role='dimension' type='nominal' />
+      <column caption='Predicted Demand' datatype='integer' name='[Predicted_Demand]' role='measure' type='quantitative' />
+      <column caption='Product ID' datatype='string' name='[Product_ID]' role='dimension' type='nominal' />
+      <column caption='Product Name' datatype='string' name='[Product_Name]' role='dimension' type='nominal' />
+      <column caption='Profit Per Order' datatype='real' name='[Profit_Per_Order]' role='measure' type='quantitative' />
+      <column caption='Return Reason' datatype='string' name='[Return_Reason]' role='dimension' type='nominal' />
+      <column caption='Return Status' datatype='string' name='[Return_Status]' role='dimension' type='nominal' />
+      <column caption='Return on Investment' datatype='real' name='[Return_on_Investment]' role='measure' type='quantitative' />
+      <column caption='Review Rating' datatype='integer' name='[Review_Rating]' role='measure' type='quantitative' />
+      <column caption='SKU Code' datatype='string' name='[SKU_Code]' role='dimension' type='nominal' />
+      <column caption='Seasonality Factor' datatype='string' name='[Seasonality_Factor]' role='dimension' type='nominal' />
+      <column caption='Sentiment Score' datatype='string' name='[Sentiment_Score]' role='dimension' type='nominal' />
+      <column caption='Ship Date' datatype='date' name='[Ship_Date]' role='dimension' type='ordinal' />
+      <column caption='Shipping Distance KM' datatype='integer' name='[Shipping_Distance_KM]' role='measure' type='quantitative' />
+      <column caption='Shipping Mode' datatype='string' name='[Shipping_Mode]' role='dimension' type='nominal' />
+      <column caption='Stock Available' datatype='integer' name='[Stock_Available]' role='measure' type='quantitative' />
+      <column caption='Stock Reorder Level' datatype='integer' name='[Stock_Reorder_Level]' role='measure' type='quantitative' />
+      <column caption='Stockout Events' datatype='integer' name='[Stockout_Events]' role='measure' type='quantitative' />
+      <column caption='Sub Category' datatype='string' name='[Sub_Category]' role='dimension' type='nominal' />
+      <column caption='Supplier Delivery Performance' datatype='string' name='[Supplier_Delivery_Performance]' role='dimension' type='nominal' />
+      <column caption='Supplier ID' datatype='string' name='[Supplier_ID]' role='dimension' type='nominal' />
+      <column caption='Supplier Lead Time' datatype='integer' name='[Supplier_Lead_Time]' role='measure' type='quantitative' />
+      <column caption='Supplier Name' datatype='string' name='[Supplier_Name]' role='dimension' type='nominal' />
+      <column caption='Supplier Rating' datatype='real' name='[Supplier_Rating]' role='measure' type='quantitative' />
+      <column caption='Total Sales' datatype='real' name='[Total_Sales]' role='measure' type='quantitative' />
+      <column caption='Unit Price' datatype='real' name='[Unit_Price]' role='measure' type='quantitative' />
+      <column caption='Warehouse ID' datatype='string' name='[Warehouse_ID]' role='dimension' type='nominal' />
+      <column caption='Warehouse Location' datatype='string' name='[Warehouse_Location]' role='dimension' type='nominal' />
+      <column caption='Warehouse Utilization Rate' datatype='real' name='[Warehouse_Utilization_Rate]' role='measure' type='quantitative' />
+      <column caption='SupplyChainManagement_Dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/gaura/AppData/Local/Temp/TableauTemp/#TableauTemp_05hflyw0971l6r16vcd0b02sdlsz.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/03/2025 04:37:03 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Order_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Order_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>35863</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order_Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Order_Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order_Date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3665</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ship_Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Ship_Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ship_Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3614</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Delivery_Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Delivery_Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Delivery_Date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3681</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order_Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Order_Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order_Status</remote-alias>
+              <ordinal>4</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product_ID</remote-alias>
+              <ordinal>5</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>35863</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product_Name</remote-alias>
+              <ordinal>6</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29707</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category</remote-alias>
+              <ordinal>7</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sub_Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sub_Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sub_Category</remote-alias>
+              <ordinal>8</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SKU_Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SKU_Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SKU_Code</remote-alias>
+              <ordinal>9</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34165</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Unit_Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Unit_Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Unit_Price</remote-alias>
+              <ordinal>10</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34975</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_ID</remote-alias>
+              <ordinal>11</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>35863</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_Name</remote-alias>
+              <ordinal>12</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>33842</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer_Segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer_Segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_Segment</remote-alias>
+              <ordinal>13</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>14</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>15</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>517</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Warehouse_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Warehouse_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Warehouse_ID</remote-alias>
+              <ordinal>16</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>35863</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Warehouse_Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Warehouse_Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Warehouse_Location</remote-alias>
+              <ordinal>17</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25353</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Stock_Available</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Stock_Available]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Stock_Available</remote-alias>
+              <ordinal>18</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1887</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Stock_Reorder_Level</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Stock_Reorder_Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Stock_Reorder_Level</remote-alias>
+              <ordinal>19</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>163</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Shipping_Mode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Shipping_Mode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Shipping_Mode</remote-alias>
+              <ordinal>20</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Carrier</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Carrier]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Carrier</remote-alias>
+              <ordinal>21</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Freight_Cost</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Freight_Cost]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Freight_Cost</remote-alias>
+              <ordinal>22</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24797</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Shipping_Distance_KM</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Shipping_Distance_KM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Shipping_Distance_KM</remote-alias>
+              <ordinal>23</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17877</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quantity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quantity</remote-alias>
+              <ordinal>24</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total_Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Sales</remote-alias>
+              <ordinal>25</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35863</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Discount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Discount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Discount</remote-alias>
+              <ordinal>26</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13034</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Profit</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Profit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Profit</remote-alias>
+              <ordinal>27</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35014</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Return_Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Return_Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Return_Status</remote-alias>
+              <ordinal>28</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer_Review</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer_Review]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_Review</remote-alias>
+              <ordinal>29</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>35863</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Review_Rating</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Review_Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Review_Rating</remote-alias>
+              <ordinal>30</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sentiment_Score</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sentiment_Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sentiment_Score</remote-alias>
+              <ordinal>31</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Return_Reason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Return_Reason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Return_Reason</remote-alias>
+              <ordinal>32</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Supplier_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Supplier_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Supplier_ID</remote-alias>
+              <ordinal>33</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>35863</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Supplier_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Supplier_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Supplier_Name</remote-alias>
+              <ordinal>34</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Supplier_Lead_Time</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Supplier_Lead_Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Supplier_Lead_Time</remote-alias>
+              <ordinal>35</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Supplier_Rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Supplier_Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Supplier_Rating</remote-alias>
+              <ordinal>36</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1463</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Supplier_Delivery_Performance</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Supplier_Delivery_Performance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Supplier_Delivery_Performance</remote-alias>
+              <ordinal>37</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Historical_Sales_Trend</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Historical_Sales_Trend]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Historical_Sales_Trend</remote-alias>
+              <ordinal>38</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35863</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Seasonality_Factor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Seasonality_Factor]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Seasonality_Factor</remote-alias>
+              <ordinal>39</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Predicted_Demand</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Predicted_Demand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Predicted_Demand</remote-alias>
+              <ordinal>40</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4729</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Stockout_Events</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Stockout_Events]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Stockout_Events</remote-alias>
+              <ordinal>41</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gross_Margin</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Gross_Margin]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gross_Margin</remote-alias>
+              <ordinal>42</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20369</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer_Lifetime_Value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Customer_Lifetime_Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_Lifetime_Value</remote-alias>
+              <ordinal>43</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35297</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Return_on_Investment</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Return_on_Investment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Return_on_Investment</remote-alias>
+              <ordinal>44</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21653</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Marketing_Spend</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Marketing_Spend]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Marketing_Spend</remote-alias>
+              <ordinal>45</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35297</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Profit_Per_Order</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Profit_Per_Order]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Profit_Per_Order</remote-alias>
+              <ordinal>46</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34448</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order_Fulfillment_Time</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Order_Fulfillment_Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order_Fulfillment_Time</remote-alias>
+              <ordinal>47</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Logistics_Delay</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Logistics_Delay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Logistics_Delay</remote-alias>
+              <ordinal>48</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer_Complaints</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Customer_Complaints]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_Complaints</remote-alias>
+              <ordinal>49</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Warehouse_Utilization_Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Warehouse_Utilization_Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Warehouse_Utilization_Rate</remote-alias>
+              <ordinal>50</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17941</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order_Accuracy_Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Order_Accuracy_Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order_Accuracy_Rate</remote-alias>
+              <ordinal>51</ordinal>
+              <family>SupplyChainManagement_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4673</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='SupplyChainManagement_Dataset.csv' id='SupplyChainManagement_Dataset.csv_256B3155D9274E66A61C439171149D16'>
+            <properties context=''>
+              <relation connection='textscan.1ln051v1oogivp0zjkvnl0sgkzj3' name='SupplyChainManagement_Dataset.csv' table='[SupplyChainManagement_Dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Order_ID' ordinal='0' />
+                  <column datatype='date' name='Order_Date' ordinal='1' />
+                  <column datatype='date' name='Ship_Date' ordinal='2' />
+                  <column datatype='date' name='Delivery_Date' ordinal='3' />
+                  <column datatype='string' name='Order_Status' ordinal='4' />
+                  <column datatype='string' name='Product_ID' ordinal='5' />
+                  <column datatype='string' name='Product_Name' ordinal='6' />
+                  <column datatype='string' name='Category' ordinal='7' />
+                  <column datatype='string' name='Sub_Category' ordinal='8' />
+                  <column datatype='string' name='SKU_Code' ordinal='9' />
+                  <column datatype='real' name='Unit_Price' ordinal='10' />
+                  <column datatype='string' name='Customer_ID' ordinal='11' />
+                  <column datatype='string' name='Customer_Name' ordinal='12' />
+                  <column datatype='string' name='Customer_Segment' ordinal='13' />
+                  <column datatype='string' name='Region' ordinal='14' />
+                  <column datatype='string' name='Country' ordinal='15' />
+                  <column datatype='string' name='Warehouse_ID' ordinal='16' />
+                  <column datatype='string' name='Warehouse_Location' ordinal='17' />
+                  <column datatype='integer' name='Stock_Available' ordinal='18' />
+                  <column datatype='integer' name='Stock_Reorder_Level' ordinal='19' />
+                  <column datatype='string' name='Shipping_Mode' ordinal='20' />
+                  <column datatype='string' name='Carrier' ordinal='21' />
+                  <column datatype='real' name='Freight_Cost' ordinal='22' />
+                  <column datatype='integer' name='Shipping_Distance_KM' ordinal='23' />
+                  <column datatype='integer' name='Quantity' ordinal='24' />
+                  <column datatype='real' name='Total_Sales' ordinal='25' />
+                  <column datatype='real' name='Discount' ordinal='26' />
+                  <column datatype='real' name='Profit' ordinal='27' />
+                  <column datatype='string' name='Return_Status' ordinal='28' />
+                  <column datatype='string' name='Customer_Review' ordinal='29' />
+                  <column datatype='integer' name='Review_Rating' ordinal='30' />
+                  <column datatype='string' name='Sentiment_Score' ordinal='31' />
+                  <column datatype='string' name='Return_Reason' ordinal='32' />
+                  <column datatype='string' name='Supplier_ID' ordinal='33' />
+                  <column datatype='string' name='Supplier_Name' ordinal='34' />
+                  <column datatype='integer' name='Supplier_Lead_Time' ordinal='35' />
+                  <column datatype='real' name='Supplier_Rating' ordinal='36' />
+                  <column datatype='string' name='Supplier_Delivery_Performance' ordinal='37' />
+                  <column datatype='real' name='Historical_Sales_Trend' ordinal='38' />
+                  <column datatype='string' name='Seasonality_Factor' ordinal='39' />
+                  <column datatype='integer' name='Predicted_Demand' ordinal='40' />
+                  <column datatype='integer' name='Stockout_Events' ordinal='41' />
+                  <column datatype='real' name='Gross_Margin' ordinal='42' />
+                  <column datatype='real' name='Customer_Lifetime_Value' ordinal='43' />
+                  <column datatype='real' name='Return_on_Investment' ordinal='44' />
+                  <column datatype='real' name='Marketing_Spend' ordinal='45' />
+                  <column datatype='real' name='Profit_Per_Order' ordinal='46' />
+                  <column datatype='integer' name='Order_Fulfillment_Time' ordinal='47' />
+                  <column datatype='string' name='Logistics_Delay' ordinal='48' />
+                  <column datatype='integer' name='Customer_Complaints' ordinal='49' />
+                  <column datatype='real' name='Warehouse_Utilization_Rate' ordinal='50' />
+                  <column datatype='real' name='Order_Accuracy_Rate' ordinal='51' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SupplyChainManagement_Dataset' name='federated.16c986y0c1l0co10yzopx0anjulq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16c986y0c1l0co10yzopx0anjulq'>
+            <column datatype='string' name='[Carrier]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quantity]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column caption='Supplier Name' datatype='string' name='[Supplier_Name]' role='dimension' type='nominal' />
+            <column-instance column='[Carrier]' derivation='None' name='[none:Carrier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Supplier_Name]' derivation='None' name='[none:Supplier_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quantity]' derivation='Sum' name='[sum:Quantity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <_.fcp.VizExtensions.false...mark class='Automatic' />
+            <_.fcp.VizExtensions.true...mark class='VizExtension' />
+            <_.fcp.VizExtensions.true...add-in add-in-id='com.tableau.extension.sankey' extension-url='https://extensions.tableauusercontent.com/sandbox/sankey/sankey.html' extension-version='1.5.0' instance-id='85A1FBA7DAA643DCACAD0E5D60FE0824'>
+              <instance-settings />
+              <type-settings>
+                <worksheet />
+              </type-settings>
+            </_.fcp.VizExtensions.true...add-in>
+            <encodings>
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{3391CD28-713F-4157-ADFB-A3ADFF279528}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Carrier:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{3391CD28-713F-4157-ADFB-A3ADFF279528}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Carrier:nk]' custom-type-name='level' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{8B8133AE-8E79-4483-A910-4053563DF5FF}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Region:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{8B8133AE-8E79-4483-A910-4053563DF5FF}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Region:nk]' custom-type-name='level' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{53F1A8F2-DFAC-4816-B3F9-3AB5D799AF9A}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Supplier_Name:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{53F1A8F2-DFAC-4816-B3F9-3AB5D799AF9A}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Supplier_Name:nk]' custom-type-name='level' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{93FF3B00-6967-492E-A7EE-9595FB24A09D}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Quantity:qk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{93FF3B00-6967-492E-A7EE-9595FB24A09D}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Quantity:qk]' custom-type-name='edge' />
+              <tooltip _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{63720A5A-516F-4BE0-87DC-CCE7B1ECC76C}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Profit:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B372164F-B745-42EA-A317-39C342F90CFA}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SupplyChainManagement_Dataset' name='federated.16c986y0c1l0co10yzopx0anjulq' />
+          </datasources>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E4DC4A66-5400-4E5C-AD22-BFCB1403440B}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SupplyChainManagement_Dataset' name='federated.16c986y0c1l0co10yzopx0anjulq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16c986y0c1l0co10yzopx0anjulq'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Quantity]' role='measure' type='quantitative' />
+            <column caption='Sub Category' datatype='string' name='[Sub_Category]' role='dimension' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sub_Category]' derivation='None' name='[none:Sub_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Quantity]' derivation='Sum' name='[sum:Quantity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <_.fcp.VizExtensions.false...mark class='Automatic' />
+            <_.fcp.VizExtensions.true...mark class='VizExtension' />
+            <_.fcp.VizExtensions.true...add-in add-in-id='com.ladataviz.extension.tree2.0' extension-url='https://partner-extensions.tableauusercontent.com/viz/ladataviz/all/tree.html' extension-version='1.0.0' instance-id='37503F97324340AD95A13253A89E6AAB'>
+              <instance-settings>
+                <setting key='vizConfig' value='{&quot;layoutOrientation&quot;:&quot;radial&quot;,&quot;showTreeRoot&quot;:true,&quot;treeHasFakeRoot&quot;:true,&quot;rootName&quot;:&quot;root&quot;,&quot;padding&quot;:[1],&quot;opacity&quot;:[0.8],&quot;sizeType&quot;:&quot;constant&quot;,&quot;constantNodeSize&quot;:[10],&quot;sizeArray&quot;:[2.5,40],&quot;linkStyle&quot;:&quot;curved&quot;,&quot;linkWidth&quot;:[1],&quot;nodesColor&quot;:&quot;#00aa00&quot;,&quot;linksColor&quot;:&quot;black&quot;,&quot;rotationAngle&quot;:[0],&quot;addX&quot;:[0],&quot;addY&quot;:[0],&quot;colorLevel&quot;:0,&quot;paddingArray&quot;:[[0],[0],[0],[0]],&quot;backgroundColor&quot;:&quot;#ffffff&quot;,&quot;fitWidth&quot;:true,&quot;fitHeight&quot;:true,&quot;fixedWidth&quot;:[1133],&quot;fixedHeight&quot;:[523],&quot;displayLabels&quot;:true,&quot;labelFontSize&quot;:[12],&quot;labelFontColor&quot;:&quot;#000000&quot;,&quot;labelStrokeWidth&quot;:[3],&quot;labelStrokeColor&quot;:&quot;#ffffff&quot;,&quot;labelWeight&quot;:&quot;bold&quot;,&quot;labelMatchColor&quot;:true,&quot;labelLocale&quot;:&quot;auto&quot;,&quot;labelStyle&quot;:&quot;number&quot;,&quot;labelNotation&quot;:&quot;standard&quot;,&quot;labelCompactDisplay&quot;:&quot;short&quot;,&quot;labelDecimals&quot;:[0],&quot;labelPrefix&quot;:&quot;&quot;,&quot;labelSuffix&quot;:&quot;&quot;,&quot;labelPixelOrPoint&quot;:&quot;px&quot;,&quot;colorRole&quot;:null,&quot;colorName&quot;:null,&quot;colorOn&quot;:&quot;nodes&quot;,&quot;discreteOption&quot;:&quot;schemeTableau10&quot;,&quot;discreteColorPalette&quot;:[&quot;#4e79a7&quot;,&quot;#f28e2c&quot;,&quot;#e15759&quot;,&quot;#76b7b2&quot;,&quot;#59a14f&quot;,&quot;#edc949&quot;,&quot;#af7aa1&quot;,&quot;#ff9da7&quot;,&quot;#9c755f&quot;,&quot;#bab0ab&quot;],&quot;uniqueColors&quot;:[],&quot;displayLegend&quot;:false,&quot;legendBackgroundColor&quot;:&quot;#ffffff&quot;,&quot;legendFontColor&quot;:&quot;#313131&quot;,&quot;legendFrameColor&quot;:&quot;#f3f3f3&quot;,&quot;displayTooltip&quot;:true}' />
+              </instance-settings>
+              <type-settings>
+                <worksheet />
+              </type-settings>
+            </_.fcp.VizExtensions.true...add-in>
+            <encodings>
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{CBC5F8BF-FFD3-46BD-B421-50A25A75682D}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Category:nk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{ECABADC2-CC6D-4D9E-9785-AA0583C66E3D}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Sub_Category:nk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{E9FC85BE-CC16-4449-8CD9-F51E1B0B9B6C}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Quantity:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F938270C-FED0-45F0-81E6-1314911A11A1}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SupplyChainManagement_Dataset' name='federated.16c986y0c1l0co10yzopx0anjulq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16c986y0c1l0co10yzopx0anjulq'>
+            <column datatype='string' name='[Carrier]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quantity]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column caption='Supplier Name' datatype='string' name='[Supplier_Name]' role='dimension' type='nominal' />
+            <column caption='Warehouse Location' datatype='string' name='[Warehouse_Location]' role='dimension' type='nominal' />
+            <column-instance column='[Carrier]' derivation='None' name='[none:Carrier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Supplier_Name]' derivation='None' name='[none:Supplier_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Warehouse_Location]' derivation='None' name='[none:Warehouse_Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quantity]' derivation='Sum' name='[sum:Quantity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <_.fcp.VizExtensions.false...mark class='Automatic' />
+            <_.fcp.VizExtensions.true...mark class='VizExtension' />
+            <_.fcp.VizExtensions.true...add-in add-in-id='com.appsfortableau.extensions.showmemore' extension-url='https://extensions-appsfortableau.infotopics.com/smm-sankey/' extension-version='1.0.0' instance-id='1B32C0D4552B4EF9AD7B20AC4AEB60BC'>
+              <instance-settings />
+              <type-settings>
+                <worksheet />
+              </type-settings>
+            </_.fcp.VizExtensions.true...add-in>
+            <encodings>
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{5876067E-DF59-4481-AF1C-35384E4FC170}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Carrier:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{5876067E-DF59-4481-AF1C-35384E4FC170}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Carrier:nk]' custom-type-name='smm-sankey+dimensions' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{6FC38D21-3021-4155-B47C-1B064BBF68CC}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Region:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{6FC38D21-3021-4155-B47C-1B064BBF68CC}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Region:nk]' custom-type-name='smm-sankey+dimensions' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{D7DADDD2-92B8-4167-9762-6A30BC35015F}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Supplier_Name:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{D7DADDD2-92B8-4167-9762-6A30BC35015F}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Supplier_Name:nk]' custom-type-name='smm-sankey+dimensions' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{AD641F6E-3F12-4360-A204-26E26C8C998C}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Quantity:qk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{AD641F6E-3F12-4360-A204-26E26C8C998C}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Quantity:qk]' custom-type-name='smm-sankey+measures' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{CB8AC1EF-AE76-4436-8C8A-D580ED77A5E2}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Profit:qk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{3BC9E6B2-9D33-40DF-AFB8-716965CE33B5}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Warehouse_Location:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B62279B9-89FF-445E-848B-331DA8C0626B}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SupplyChainManagement_Dataset' name='federated.16c986y0c1l0co10yzopx0anjulq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16c986y0c1l0co10yzopx0anjulq'>
+            <column datatype='string' name='[Carrier]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column caption='Supplier Name' datatype='string' name='[Supplier_Name]' role='dimension' type='nominal' />
+            <column caption='Total Sales' datatype='real' name='[Total_Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Carrier]' derivation='None' name='[none:Carrier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Supplier_Name]' derivation='None' name='[none:Supplier_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total_Sales]' derivation='Sum' name='[sum:Total_Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <_.fcp.VizExtensions.false...mark class='Automatic' />
+            <_.fcp.VizExtensions.true...mark class='VizExtension' />
+            <_.fcp.VizExtensions.true...add-in add-in-id='com.appsfortableau.extensions.waterfall-chart' extension-url='https://extensions-appsfortableau.infotopics.com/smm-waterfall/' extension-version='1.0.0' instance-id='871C8546E8A94B409F0CA80F9F7B62C1'>
+              <instance-settings />
+              <type-settings>
+                <worksheet />
+              </type-settings>
+            </_.fcp.VizExtensions.true...add-in>
+            <encodings>
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{341E7A09-04E5-4F14-B3A2-BAA75737DD1C}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Carrier:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{341E7A09-04E5-4F14-B3A2-BAA75737DD1C}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Carrier:nk]' custom-type-name='smm-waterfall+category' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{B912CE49-83AE-4668-A852-720DAFD10C3A}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Supplier_Name:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{B912CE49-83AE-4668-A852-720DAFD10C3A}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Supplier_Name:nk]' custom-type-name='smm-waterfall+xAxis' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{0CD932F2-89D7-4A40-8752-463BE4C06F68}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Profit:qk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{0CD932F2-89D7-4A40-8752-463BE4C06F68}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Profit:qk]' custom-type-name='smm-waterfall+measures' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{5A7507BF-9A62-4CC4-A66C-1ACB375D56BA}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Total_Sales:qk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{5A7507BF-9A62-4CC4-A66C-1ACB375D56BA}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Total_Sales:qk]' custom-type-name='smm-waterfall+measures' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{51DB8EE5-7E80-4FC4-B162-8D83024AB6FE}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SupplyChainManagement_Dataset' name='federated.16c986y0c1l0co10yzopx0anjulq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16c986y0c1l0co10yzopx0anjulq'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Customer Complaints' datatype='integer' name='[Customer_Complaints]' role='measure' type='quantitative' />
+            <column caption='Product Name' datatype='string' name='[Product_Name]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quantity]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column caption='Return Reason' datatype='string' name='[Return_Reason]' role='dimension' type='nominal' />
+            <column caption='Sub Category' datatype='string' name='[Sub_Category]' role='dimension' type='nominal' />
+            <column caption='Total Sales' datatype='real' name='[Total_Sales]' role='measure' type='quantitative' />
+            <column caption='Unit Price' datatype='real' name='[Unit_Price]' role='measure' type='quantitative' />
+            <column caption='Warehouse Location' datatype='string' name='[Warehouse_Location]' role='dimension' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Name]' derivation='None' name='[none:Product_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Return_Reason]' derivation='None' name='[none:Return_Reason:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sub_Category]' derivation='None' name='[none:Sub_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Warehouse_Location]' derivation='None' name='[none:Warehouse_Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer_Complaints]' derivation='Sum' name='[sum:Customer_Complaints:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quantity]' derivation='Sum' name='[sum:Quantity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total_Sales]' derivation='Sum' name='[sum:Total_Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Unit_Price]' derivation='Sum' name='[sum:Unit_Price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <_.fcp.VizExtensions.false...mark class='Automatic' />
+            <_.fcp.VizExtensions.true...mark class='VizExtension' />
+            <_.fcp.VizExtensions.true...add-in add-in-id='com.appsfortableau.extensions.drill-down-tree' extension-url='https://extensions-appsfortableau.infotopics.com/drill-down-tree-free/' extension-version='1.0.0' instance-id='CAB0E442DCAB4CF99F8ACAE70BA5D3B3'>
+              <instance-settings />
+              <type-settings>
+                <worksheet />
+              </type-settings>
+            </_.fcp.VizExtensions.true...add-in>
+            <encodings>
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{DA75F1A2-5324-409E-A2C8-DD4126DCCB79}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Product_Name:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{DA75F1A2-5324-409E-A2C8-DD4126DCCB79}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Product_Name:nk]' custom-type-name='dimensions' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{A1A28534-8C51-455C-8368-F06EA69858E7}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Region:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{A1A28534-8C51-455C-8368-F06EA69858E7}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Region:nk]' custom-type-name='dimensions' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{6555F2AB-4DD3-441C-B9D2-BB9C06BC8802}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Country:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{6555F2AB-4DD3-441C-B9D2-BB9C06BC8802}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Country:nk]' custom-type-name='dimensions' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{CA77830E-C4D4-47CD-B03F-7374A7CEE63F}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Return_Reason:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{CA77830E-C4D4-47CD-B03F-7374A7CEE63F}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Return_Reason:nk]' custom-type-name='dimensions' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{1584DB85-9489-44E0-9E48-27284404FB31}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Warehouse_Location:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{1584DB85-9489-44E0-9E48-27284404FB31}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Warehouse_Location:nk]' custom-type-name='dimensions' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{5FFA9CB3-7BC2-4176-BE1A-3B964B4D5760}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Sub_Category:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{5FFA9CB3-7BC2-4176-BE1A-3B964B4D5760}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[none:Sub_Category:nk]' custom-type-name='dimensions' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{F30AEF39-EE75-4838-8E05-6E75CA0EBB2D}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Quantity:qk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{F30AEF39-EE75-4838-8E05-6E75CA0EBB2D}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Quantity:qk]' custom-type-name='measures' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{F3347631-FC9F-4EFF-8D6F-7044263E5A12}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Profit:qk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{F3347631-FC9F-4EFF-8D6F-7044263E5A12}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Profit:qk]' custom-type-name='measures' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{C83E8DEA-C0E3-48D4-8E51-45DB12308AE0}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Customer_Complaints:qk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{C83E8DEA-C0E3-48D4-8E51-45DB12308AE0}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Customer_Complaints:qk]' custom-type-name='measures' />
+              <tooltip _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{E51D3F4F-04C5-42C0-AEEC-27BCC35D408B}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Total_Sales:qk]' />
+              <tooltip _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{C7D57EC3-5334-457E-868E-71C0FDD5F428}' column='[federated.16c986y0c1l0co10yzopx0anjulq].[sum:Unit_Price:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C9876CB1-C48A-40BF-B3C7-94D85B478333}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{79E2CF7D-DC11-4C3D-8FBD-BA36CF5574A6}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Carrier:nk]</field>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Region:nk]</field>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Supplier_Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9A9D900A-762A-4324-9006-A7AC440F9B42}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns />
+              </tuple-descriptor>
+              <tuple />
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Country:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B412B70A-0C9C-4691-95EE-9117A5218111}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Category:nk]</field>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Sub_Category:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C7DD66BD-6EFB-47DB-A439-B9F59DE50F91}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Carrier:nk]</field>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Region:nk]</field>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Supplier_Name:nk]</field>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Warehouse_Location:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3F394E83-FA62-4541-824A-AD5F9A8F66DF}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Carrier:nk]</field>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Supplier_Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D057C83F-3BC9-4A65-ACF4-8053FCA8D097}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Country:nk]</field>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Product_Name:nk]</field>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Region:nk]</field>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Return_Reason:nk]</field>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Sub_Category:nk]</field>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Warehouse_Location:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3C5099C9-E0B3-4105-8521-B69AC7479C8F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16c986y0c1l0co10yzopx0anjulq].[none:Return_Reason:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A9B04A3C-8862-414C-8500-ECA6EF0D8DE3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAADwElEQVR4nO3Wv6vVdRzH8dfRCsW4XiU100ASTDeLlighwiGCGhwaaqmpJQiigoamaIjG
+      CKrbFLVUf0GzQzQI3RqiG2ZpefE3de893nM999tSTS01pPJ6PKYPn+HNZ3ny/oyGYRgCpTZc
+      7wfA9SQAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBq
+      AqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmA
+      agKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJ
+      gGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCq
+      CYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgBveucUzWVhY
+      yMLCQpZX1v6+v3LlQqZ/ni9cuZhh+PezBcAN79v5L/Pay6/n408+y/lL41xdXs619SHvf/BG
+      fl1ZSZK8OfdWhiTjq+P81cHy0tI/zpuuTXJ1ci1JMhqG/9IN/L/eeXsuTzx1LMPS6Xz+xfF8
+      c/JM7h19l9sPP5nvf7iUW7Yu5tHdezN/fj3TtY05sGdzfp6fz/jQQ9k/Hmfn5lHueuDBHNi3
+      Ka++8mG27p3k4aOP2wDcXM5e/DGT6YYsjVayYffdeea5Z7Pz98UkydfH5zMzuy2zd85m8fLZ
+      bN80yi+rl7O+Ps10/VqGYcj41Ilsf+RoXnrhxayeOyUAbg4HDu3Pli23ZTpZy8ytQ+7ZdTgH
+      Z3fko/fmsufI0dx/6L4ce/7prK6sZNu2rRmNN2aya0eO7DuY07+dzYmTpzI7O5OZg4/ljp++
+      yrtzn2Z14gtEORuAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCq
+      CYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYA
+      qgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgm
+      AKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCo
+      JgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKj2B40pn2WhyOnQ
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 5' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 6' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 7' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+  <_.fcp.VizExtensions.true...referenced-extensions>
+    <_.fcp.VizExtensions.true...referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='1.0.0' id='com.appsfortableau.extensions.drill-down-tree'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>DrillDownTree Free</description>
+          <author email='support@appsfortableau.infotopics.com' name='Infotopics | Apps for Tableau' organization='Infotopics | Apps for Tableau' website='https://appsfortableau.infotopics.com' />
+          <min-api-version>1.11</min-api-version>
+          <source-location>
+            <url>https://extensions-appsfortableau.infotopics.com/drill-down-tree-free/</url>
+          </source-location>
+          <icon>iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAYAAAA4TnrqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGymlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDE5LTAyLTA1VDA4OjE0OjQzLTA4OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxOS0wMi0wNlQxNDo1MjoxOC0wODowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxOS0wMi0wNlQxNDo1MjoxOC0wODowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDplNTY0N2ZiNy01YzVhLTEwNDctOTQ3Zi0xMDM4NWUyNmFiYzgiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDoxNWU2ODg3ZS1lYjlkLTI2NDctYTY3ZC0wMGU1NmRkYTQ4ODMiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDplZjQwMWQzOC01ZDU5LTRiNDYtYTE5OC1jMzBiYjYzODUwMWMiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmVmNDAxZDM4LTVkNTktNGI0Ni1hMTk4LWMzMGJiNjM4NTAxYyIgc3RFdnQ6d2hlbj0iMjAxOS0wMi0wNVQwODoxNDo0My0wODowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpkYWNkNzU1My03ZjdkLTg2NDgtOGUwYi03NmQ1NzNjZTMxOTUiIHN0RXZ0OndoZW49IjIwMTktMDItMDVUMDg6MzY6MzktMDg6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6ZTU2NDdmYjctNWM1YS0xMDQ3LTk0N2YtMTAzODVlMjZhYmM4IiBzdEV2dDp3aGVuPSIyMDE5LTAyLTA2VDE0OjUyOjE4LTA4OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+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</icon>
+          <encoding id='dimensions'>
+            <display-name>Dimensions</display-name>
+            <data-spec>
+              <data-type>string</data-type>
+            </data-spec>
+            <role-spec>
+              <role-type>discrete-dimension</role-type>
+            </role-spec>
+            <encoding-icon token='level' />
+          </encoding>
+          <encoding id='measures'>
+            <display-name>Measure</display-name>
+            <data-spec>
+              <data-type>numeric</data-type>
+            </data-spec>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+            </role-spec>
+            <encoding-icon token='metric' />
+          </encoding>
+        </worksheet-extension>
+        <resources>
+          <resource id='name'>
+            <text locale='en_US'>DrillDownTree Free</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='Sheet 6' />
+      </referenced-views>
+    </_.fcp.VizExtensions.true...referenced-extension>
+    <_.fcp.VizExtensions.true...referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='1.0.0' id='com.appsfortableau.extensions.showmemore'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>Sankey Diagram</description>
+          <author email='support@appsfortableau.infotopics.com' name='Infotopics | Apps for Tableau' organization='Infotopics | Apps for Tableau' website='https://appsfortableau.infotopics.com' />
+          <min-api-version>1.11</min-api-version>
+          <source-location>
+            <url>https://extensions-appsfortableau.infotopics.com/smm-sankey/</url>
+          </source-location>
+          <icon>iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAYAAAA4TnrqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGymlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDE5LTAyLTA1VDA4OjE0OjQzLTA4OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxOS0wMi0wNlQxNDo1MjoxOC0wODowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxOS0wMi0wNlQxNDo1MjoxOC0wODowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDplNTY0N2ZiNy01YzVhLTEwNDctOTQ3Zi0xMDM4NWUyNmFiYzgiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDoxNWU2ODg3ZS1lYjlkLTI2NDctYTY3ZC0wMGU1NmRkYTQ4ODMiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDplZjQwMWQzOC01ZDU5LTRiNDYtYTE5OC1jMzBiYjYzODUwMWMiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmVmNDAxZDM4LTVkNTktNGI0Ni1hMTk4LWMzMGJiNjM4NTAxYyIgc3RFdnQ6d2hlbj0iMjAxOS0wMi0wNVQwODoxNDo0My0wODowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpkYWNkNzU1My03ZjdkLTg2NDgtOGUwYi03NmQ1NzNjZTMxOTUiIHN0RXZ0OndoZW49IjIwMTktMDItMDVUMDg6MzY6MzktMDg6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6ZTU2NDdmYjctNWM1YS0xMDQ3LTk0N2YtMTAzODVlMjZhYmM4IiBzdEV2dDp3aGVuPSIyMDE5LTAyLTA2VDE0OjUyOjE4LTA4OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+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</icon>
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+          <encoding id='smm-sankey+dimensions'>
+            <display-name>Dimensions</display-name>
+            <data-spec>
+              <data-type>string</data-type>
+            </data-spec>
+            <encoding-icon token='level' />
+          </encoding>
+          <encoding id='smm-sankey+measures'>
+            <display-name>Measure</display-name>
+            <data-spec>
+              <data-type>numeric</data-type>
+            </data-spec>
+          </encoding>
+        </worksheet-extension>
+        <resources>
+          <resource id='name'>
+            <text locale='en_US'>Sankey Diagram</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='Sheet 4' />
+      </referenced-views>
+    </_.fcp.VizExtensions.true...referenced-extension>
+    <_.fcp.VizExtensions.true...referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='1.0.0' id='com.appsfortableau.extensions.waterfall-chart'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>WaterFall chart</description>
+          <author email='support@appsfortableau.infotopics.com' name='Infotopics | Apps for Tableau' organization='Infotopics | Apps for Tableau' website='https://appsfortableau.infotopics.com' />
+          <min-api-version>1.11</min-api-version>
+          <source-location>
+            <url>https://extensions-appsfortableau.infotopics.com/smm-waterfall/</url>
+          </source-location>
+          <icon>iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAYAAAA4TnrqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGymlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDE5LTAyLTA1VDA4OjE0OjQzLTA4OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxOS0wMi0wNlQxNDo1MjoxOC0wODowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxOS0wMi0wNlQxNDo1MjoxOC0wODowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDplNTY0N2ZiNy01YzVhLTEwNDctOTQ3Zi0xMDM4NWUyNmFiYzgiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDoxNWU2ODg3ZS1lYjlkLTI2NDctYTY3ZC0wMGU1NmRkYTQ4ODMiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDplZjQwMWQzOC01ZDU5LTRiNDYtYTE5OC1jMzBiYjYzODUwMWMiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmVmNDAxZDM4LTVkNTktNGI0Ni1hMTk4LWMzMGJiNjM4NTAxYyIgc3RFdnQ6d2hlbj0iMjAxOS0wMi0wNVQwODoxNDo0My0wODowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpkYWNkNzU1My03ZjdkLTg2NDgtOGUwYi03NmQ1NzNjZTMxOTUiIHN0RXZ0OndoZW49IjIwMTktMDItMDVUMDg6MzY6MzktMDg6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6ZTU2NDdmYjctNWM1YS0xMDQ3LTk0N2YtMTAzODVlMjZhYmM4IiBzdEV2dDp3aGVuPSIyMDE5LTAyLTA2VDE0OjUyOjE4LTA4OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+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</icon>
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+          <encoding id='smm-waterfall+category'>
+            <display-name>Category</display-name>
+            <encoding-icon token='letter-c' />
+          </encoding>
+          <encoding id='smm-waterfall+xAxis'>
+            <display-name>X-Axis</display-name>
+            <encoding-icon token='letter-a' />
+          </encoding>
+          <encoding id='smm-waterfall+measures'>
+            <display-name>Measure</display-name>
+            <data-spec>
+              <data-type>numeric</data-type>
+            </data-spec>
+            <encoding-icon token='letter-m' />
+          </encoding>
+        </worksheet-extension>
+        <resources>
+          <resource id='name'>
+            <text locale='en_US'>WaterFall chart</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='Sheet 5' />
+      </referenced-views>
+    </_.fcp.VizExtensions.true...referenced-extension>
+    <_.fcp.VizExtensions.true...referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='1.0.0' id='com.ladataviz.extension.tree2.0'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>Tree</description>
+          <author email='tristan@ladataviz.com' name='LaDataViz' organization='LaDataViz' website='https://www.ladataviz.com' />
+          <min-api-version>1.11</min-api-version>
+          <source-location>
+            <url>https://partner-extensions.tableauusercontent.com/viz/ladataviz/all/tree.html</url>
+          </source-location>
+          <icon />
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+          <encoding id='size'>
+            <display-name>Size</display-name>
+            <data-spec>
+              <data-type>numeric</data-type>
+            </data-spec>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='size' />
+            <tooltip resource-id='tooltip-size'>Add a size to the nodes</tooltip>
+          </encoding>
+          <encoding id='color'>
+            <display-name>Color</display-name>
+            <role-spec>
+              <role-type>continuous-dimension</role-type>
+              <role-type>discrete-dimension</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='color' />
+          </encoding>
+        </worksheet-extension>
+        <resources>
+          <resource id='name'>
+            <text locale='en_US'>Tree</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='Sheet 3' />
+      </referenced-views>
+    </_.fcp.VizExtensions.true...referenced-extension>
+    <_.fcp.VizExtensions.true...referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='1.5.0' id='com.tableau.extension.sankey'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>Visualisation of flows between nodes (levels) with proportionally sized edges.</description>
+          <author email='github@tableau.com' name='tableau' organization='tableau' website='https://www.tableau.com' />
+          <min-api-version>1.11</min-api-version>
+          <source-location>
+            <url>https://extensions.tableauusercontent.com/sandbox/sankey/sankey.html</url>
+          </source-location>
+          <icon />
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+          <encoding id='level'>
+            <display-name resource-id='level-id'>Level</display-name>
+            <role-spec>
+              <role-type>discrete-dimension</role-type>
+              <role-type>discrete-measure</role-type>
+            </role-spec>
+            <fields max-count='5' />
+            <encoding-icon token='level' />
+            <tooltip resource-id='level-id'>Level</tooltip>
+          </encoding>
+          <encoding id='edge'>
+            <display-name resource-id='edge-id'>Link</display-name>
+            <role-spec>
+              <role-type>continuous-dimension</role-type>
+              <role-type>continuous-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='edge' />
+            <tooltip resource-id='edge-id'>Edge</tooltip>
+          </encoding>
+        </worksheet-extension>
+        <resources>
+          <resource id='edge-id'>
+            <text locale='de_DE'>Verbindungen</text>
+            <text locale='en_GB'>Link</text>
+            <text locale='en_US'>Link</text>
+            <text locale='es_ES'>Vínculos</text>
+            <text locale='fr_CA'>Lien</text>
+            <text locale='fr_FR'>Lien</text>
+            <text locale='it_IT'>Collegamento</text>
+            <text locale='ja_JP'>リンク</text>
+            <text locale='ko_KR'>링크</text>
+            <text locale='pt_BR'>Elos</text>
+            <text locale='sv_SE'>länkar</text>
+            <text locale='th_TH'>ลิงก์</text>
+            <text locale='zh_CN'>链接</text>
+            <text locale='zh_TW'>連結</text>
+          </resource>
+          <resource id='level-id'>
+            <text locale='de_DE'>Ebene</text>
+            <text locale='en_GB'>Level</text>
+            <text locale='en_US'>Level</text>
+            <text locale='es_ES'>nivel</text>
+            <text locale='fr_CA'>niveau</text>
+            <text locale='fr_FR'>niveau</text>
+            <text locale='it_IT'>livello</text>
+            <text locale='ja_JP'>レベル</text>
+            <text locale='ko_KR'>레벨</text>
+            <text locale='pt_BR'>nível</text>
+            <text locale='sv_SE'>nivå</text>
+            <text locale='th_TH'>ระดับ</text>
+            <text locale='zh_CN'>级别</text>
+            <text locale='zh_TW'>級別</text>
+          </resource>
+          <resource id='name'>
+            <text locale='en_US'>Sankey</text>
+            <text locale='ja_JP'>サンキー</text>
+            <text locale='zh_CN'>桑基图</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='Sheet 1' />
+      </referenced-views>
+    </_.fcp.VizExtensions.true...referenced-extension>
+  </_.fcp.VizExtensions.true...referenced-extensions>
+</workbook>
